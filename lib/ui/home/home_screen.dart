@@ -649,32 +649,32 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     const SizedBox(
                                       width: 15,
                                     ),
-                                    // Column(
-                                    //   children: [
-                                    //     Container(
-                                    //       clipBehavior: Clip.hardEdge,
-                                    //       decoration: const BoxDecoration(
-                                    //         shape: BoxShape.circle,
-                                    //         color: kPrimaryColor,
-                                    //       ),
-                                    //       child: IconButton(
-                                    //         onPressed: () {
-                                    //           Navigator.of(context)
-                                    //               .pushNamed(SwapScreen.route);
-                                    //         },
-                                    //         icon: const Icon(
-                                    //           Icons.swap_horiz,
-                                    //           size: 24,
-                                    //           color: Colors.white,
-                                    //         ),
-                                    //       ),
-                                    //     ),
-                                    //     Text(
-                                    //       AppLocalizations.of(context)!.swap,
-                                    //       style: const TextStyle(fontSize: 12),
-                                    //     )
-                                    //   ],
-                                    // )
+                                    Column(
+                                      children: [
+                                        Container(
+                                          clipBehavior: Clip.hardEdge,
+                                          decoration: const BoxDecoration(
+                                            shape: BoxShape.circle,
+                                            color: kPrimaryColor,
+                                          ),
+                                          child: IconButton(
+                                            onPressed: () {
+                                              Navigator.of(context)
+                                                  .pushNamed(SwapScreen.route);
+                                            },
+                                            icon: const Icon(
+                                              Icons.swap_horiz,
+                                              size: 24,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ),
+                                        Text(
+                                          AppLocalizations.of(context)!.swap,
+                                          style: const TextStyle(fontSize: 12),
+                                        )
+                                      ],
+                                    )
                                   ],
                                 ),
                                 const SizedBox(
